@@ -59,3 +59,63 @@ sum = 0
 for i in range(1,n+1):
     sum = sum+i
 print(f"The sum is {sum}")
+
+# Question 6
+# Factorial of a number
+
+n = int(input("enter a number :- "))
+factorial = 1
+for i in range(1,n+1):
+    factorial = factorial*i
+print(f"The factorial of {n} is {factorial}")
+
+# Question 7
+# Print the sum of all even & odd numbers in a range separately
+
+n = int(input("enter a number :- "))
+even = 0
+odd = 0
+for i in range(1,n+1):
+    if i%2 == 0:
+        even = even+i
+    else:
+        odd = odd+i
+print(f"Your even and odd sum are {even} {odd}")
+
+# Question 8
+# Print all the factors of a number
+n = int(input("enter a number :- "))
+for i in range(1,n+1):
+    if n%i == 0:
+        print(i)
+
+# Question 9
+# Accept a number and check if it a perfect number or not.
+# A number whose sum of factors is equal to the number itself
+# Ex - 6 = 1, 2, 3 = 6
+
+n = int(input("enter a number :- "))
+sum = 0
+for i in range(1,n):
+    if n%i==0:
+        sum = sum+i
+
+if sum==n:
+    print(f"{n} is an perfect number")
+else:
+    print(f"{n} is not a perfect number")
+
+# Question 10 
+# Check wether the number is prime or not
+
+n = int(input("enter a number :- "))
+count = 0
+
+for i in range(1,n+1):
+    if n%i==0:
+        count = count+1
+
+if count == 2:
+    print(f"{n} is a prime number: ")
+else:
+    print(f"{n} is not a prime number: ")
