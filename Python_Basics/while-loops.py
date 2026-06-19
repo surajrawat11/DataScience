@@ -27,11 +27,33 @@ print(rev)
 c = int(input("Enter a number :- "))
 rev = 0
 copy = c
-while a>0:
-    rev = rev*10 + a%10
+while c>0:
+    rev = rev*10 + c%10
     c = c//10
 
 if copy==rev:
     print("pallindrome number")
 else:
     print("not pallindrome") 
+
+# Question 5
+# Create a random number guessing game with python.
+import random
+num = random.randint(1,10)
+tries = 0
+while True:
+    guess = int(input("please guess a number :- "))
+    if num==guess:
+        tries+=1
+        print(f"you are right you guess the number in {tries} times")
+        break
+    elif num<guess:
+        print("Go with a little lower number")
+        tries+=1
+    elif num>guess:
+        print("Go a with a little higher number")
+        tries+=1
+
+    else:
+        tries+=1
+        print("no number is different")
