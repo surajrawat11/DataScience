@@ -26,3 +26,15 @@ x.pop()
 print(x)
 x.clear()
 print(x)
+
+p = {1,6,2,4,2}
+q = {3,2,5,6}
+i = p.union(q)
+print(i)
+j = p.intersection(q)
+print(j)
+r = p.difference(q)
+print(r)
+k = p.symmetric_difference(q)
+print(k)
+
