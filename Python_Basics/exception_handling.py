@@ -39,4 +39,14 @@ else - Run code only if no exception occurs
 raise - Manually throws an exception
 
 """
+
+b = int(input("enter a number :- "))
+
+try:
+    print(10/b)
+
+except ZeroDivisionError:
+    print("sorry you cannot divide by zero")
+
+print("divison completed")
       
