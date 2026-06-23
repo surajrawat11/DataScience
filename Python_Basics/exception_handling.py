@@ -40,13 +40,35 @@ raise - Manually throws an exception
 
 """
 
-b = int(input("enter a number :- "))
+b = input("enter a number :- ")
 
 try:
     print(10/b)
 
-except ZeroDivisionError:
-    print("sorry you cannot divide by zero")
+except Exception as  err:
+    print(f"sorry there is an error as {err}")
+
+else:
+    print("good there is no exception")
+
+finally:
+    print("I will run no matter what")
 
 print("divison completed")
+
+
+# raise   (manually throw an exception)
+
+age = int(input("enter your age :- "))
+
+try:
+    if age < 10 or age > 18:
+        raise ValueError("your age must be between 10 to 18")
+    else:
+        print("welcome to the club")
+except Exception as err:
+    print(f"an error occured as {err}")
+
+print("The club will start soon")
+
       
